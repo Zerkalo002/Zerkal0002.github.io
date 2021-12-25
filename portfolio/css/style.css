@@ -1,0 +1,71 @@
+/* Подключение шрифтов */
+@font-face {
+    font-family:BebasNeue; /* Имя шрифта */
+    src: url("../fonts/BebasNeue-Regular.ttf"); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family:Poppins; /* Имя шрифта */
+    src: url("../fonts/Poppins-Medium.ttf"); /* Путь к файлу со шрифтом */
+}
+
+body {
+    background: #141414;
+    color: #fdfdfb;
+    font-family:BebasNeue;
+}
+
+.wrapper {
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 63px;
+    font-style: italic;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+p {
+    color: #fcfaf6;
+    font-family:Poppins;
+}
+
+.avatar {
+    width: 250px;
+    height: 250px;
+    background: url("https://cdn.pixabay.com/photo/2018/01/15/07/51/woman-3083379_960_720.jpg");
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    margin:  auto;
+}
+
+.avatar::after {
+    content: "";
+    display: block;
+    height: 105%;
+    width: 105%;
+    background: #00ffba;
+    position: relative;
+    z-index: -1;
+    border-radius: 50%;
+    left: -2.5%;
+    top: -2.5%;
+}
+
+
+.icon-item {
+    display: inline-block;
+    margin-right: 18px;
+}
+
+.icon__img {
+    width: 35px;
+}
